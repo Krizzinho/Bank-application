@@ -46,7 +46,6 @@ const loginToAccount = function () {
     const demoAccounts = document.querySelector('.accounts');
     demoAccounts.classList.add('hidden');
 
-    document.body.style.overflowY = 'scroll';
     document.title = 'Forest Bank - Control panel';
 
     updateUI(foundUser);
@@ -218,7 +217,6 @@ const logOut = function (
   const demoAccounts = document.querySelector('.accounts');
   demoAccounts.classList.remove('hidden');
 
-  document.body.style.overflowY = 'hidden';
   document.title = 'Forest Bank - Log in';
 
   transferButton.removeEventListener('click', transferMoney);
